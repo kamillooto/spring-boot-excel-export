@@ -18,8 +18,8 @@ public class ReportRestController {
 
         response.setContentType("application/octet-stream");
 
-        String headerKey = "Content Disposition";
-        String headerValue = "attachment;filename-courses.xls";
+        String headerKey = "Content-Disposition";
+        String headerValue = "attachment;filename=courses.xls";
 
         response.setHeader(headerKey, headerValue);
 
